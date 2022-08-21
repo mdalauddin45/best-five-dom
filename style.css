@@ -4,10 +4,6 @@
     background-position: left;
     height: 80vh;
 } */
-.card-image {
-    height: 35vh;
-    object-fit: cover;
-}
 
 .select-player-name {
     height: 45vh;

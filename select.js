@@ -1,7 +1,7 @@
 const playerArry = [];
 
 function display(player) {
-    console.log(player);
+
     const tableBody = document.getElementById('player-table');
     tableBody.innerHTML = "";
 
@@ -27,6 +27,6 @@ function selectedV(element) {
         playerName: playerName
     }
     playerArry.push(playerObj);
-    // playerArry.length
+
     display(playerArry);
 }
