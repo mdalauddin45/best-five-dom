@@ -1,16 +1,43 @@
-/* header {
-    background-image: url(./Image/banar-image.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 80vh;
-} */
+ body {
+     background-color: rgb(25, 24, 24);
+ }
 
-.select-player-name {
-    height: 45vh;
-    object-fit: cover;
-}
+ header {
+     height: 60vh;
+ }
 
-.budget-sec {
-    height: 50vh;
-    object-fit: cover;
-}
+ header>section>div>img {
+     height: 50vh;
+     margin-top: 8vh;
+     margin-left: 2vh;
+ }
+
+ header>section>div>h1 {
+     font-size: 12vh;
+     margin-top: 15vh;
+     color: tomato;
+ }
+
+
+
+ .select-player-name {
+     height: 45vh;
+     object-fit: cover;
+ }
+
+ .budget-sec {
+     height: 50vh;
+     object-fit: cover;
+ }
+
+ .selected-body {
+     background-color: black;
+     margin-top: 2vh;
+     margin-right: 15vh;
+     margin-left: 15vh;
+     height: 50vh;
+ }
+
+ .table {
+     color: white;
+ }

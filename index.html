@@ -12,10 +12,15 @@
 <body>
     <!-- header section start  -->
     <header class="bg-black text-center">
-        <section>
-            <div class="text-white">
+        <section class="d-flex ">
+            <div class="mt-4">
+                <img src="./Image/banar-image.png" alt="">
+            </div>
+            <div class="text-white mx-auto">
                 <h1>Fifa World Cup Qatar 2022</h1>
-                <p>As we count down to the start of the global showpiece in Qatar on 20 November, FIFA+ is showcasing
+                <p class="fs-2">As we count down to the start of the global showpiece in Qatar on 20 November, <br>
+                    FIFA+ is
+                    showcasing
                     100 of the greatest moments in FIFA World Cup history.</p>
             </div>
         </section>
@@ -23,7 +28,7 @@
     <!-- header section end -->
 
     <!-- player section stat  -->
-    <div class=" text-center">
+    <div class=" text-center ">
         <div class="row">
             <div class="col g-col-8">
                 <div class="container text-center">
@@ -105,34 +110,37 @@
                     </div>
                 </div>
             </div>
-            <div class="col  g-col-4">
-                <div class="select-player-name">
+            <div class="col  g-col-4 text-white">
+                <section class="selected-body">
+                    <div class="select-player-name">
+                        <h1>Selected - V</h1>
+                        <table class="table">
+                            <thead>
 
-                    <h1>Selected - V</h1>
-                    <table class="table">
-                        <thead>
-
-                        </thead>
-                        <tbody id="player-table">
+                            </thead>
+                            <tbody id="player-table">
 
 
-                        </tbody>
-                    </table>
-                    <div>
+                            </tbody>
+                        </table>
+                        <div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="budget-sec">
-                    <h1>Budget</h1>
-                    <span>Per Player <input id="per-player-coast" type="number" name=""></span> <br>
-                    <button id="calculate-btn" type="button" class="btn btn-primary mt-2">Calculate</button>
-                    <p>Player Expenses:<span id="player-expenses"></span> </p>
-                    <span> Manager <input id="manager-cost" class="mb-2" type="number" name=""></span> <br>
-                    <span>Coach <input id="coach-cost" class="mb-2" type="number" name="" id=""></span> <br>
+                </section>
+                <section class="selected-body">
+                    <div class="budget-sec">
+                        <h1>Budget</h1>
+                        <span>Per Player <input id="per-player-coast" type="number" name=""></span> <br>
+                        <button id="calculate-btn" type="button" class="btn btn-primary mt-2">Calculate</button>
+                        <p>Player Expenses:<span id="player-expenses"></span> </p>
+                        <span> Manager <input id="manager-cost" class="mb-2" type="number" name=""></span> <br>
+                        <span>Coach <input id="coach-cost" class="mb-2" type="number" name="" id=""></span> <br>
 
-                    <button id="calculate-tatal" type="button" class="btn btn-primary">Calculate Total</button>
-                    <p>Total <span id="total-value"></span> </p>
-                </div>
+                        <button id="calculate-tatal" type="button" class="btn btn-primary">Calculate Total</button>
+                        <p>Total <span id="total-value"></span> </p>
+                    </div>
+                </section>
             </div>
 
         </div>
