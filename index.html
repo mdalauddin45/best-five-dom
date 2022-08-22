@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FootBall-Players</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -113,12 +115,11 @@
             <div class="col  g-col-4 text-white">
                 <section class="selected-body">
                     <div class="select-player-name">
-                        <h1>Selected - V</h1>
-                        <table class="table">
+                        <table class="table table-borderless">
                             <thead>
-
+                                <h1>Selected - V</h1>
                             </thead>
-                            <tbody id="player-table">
+                            <tbody id="player-table" class="fs-4">
 
 
                             </tbody>
@@ -128,17 +129,24 @@
                         </div>
                     </div>
                 </section>
-                <section class="selected-body">
+                <section class="selected-body  ">
                     <div class="budget-sec">
-                        <h1>Budget</h1>
-                        <span>Per Player <input id="per-player-coast" type="number" name=""></span> <br>
-                        <button id="calculate-btn" type="button" class="btn btn-primary mt-2">Calculate</button>
-                        <p>Player Expenses:<span id="player-expenses"></span> </p>
-                        <span> Manager <input id="manager-cost" class="mb-2" type="number" name=""></span> <br>
-                        <span>Coach <input id="coach-cost" class="mb-2" type="number" name="" id=""></span> <br>
+                        <h1> Budget</h1>
+                        <div class="fs-4 w-100 text-center">
+                            <span>Per Player <input id="per-player-coast" type="number" name=""></span> <br>
+                            <button id="calculate-btn" type="button"
+                                class="btn btn-primary mt-3 mb-2 fs-4 w-25  ">Calculate</button>
+                            <p class="me-4">Player Expenses :<span id="player-expenses"></span> </p>
+                            <span class="me-2"> Manager <input id="manager-cost" class="mb-2" type="number"
+                                    name=""></span> <br>
+                            <span>Coach <input id="coach-cost" class="mb-2 ms-4  mt-3 w-12" type="number"
+                                    name=""></span>
+                            <br>
 
-                        <button id="calculate-tatal" type="button" class="btn btn-primary">Calculate Total</button>
-                        <p>Total <span id="total-value"></span> </p>
+                            <button id="calculate-total" type="button" class="btn btn-primary  mt-3 fs-4 ">Calculate
+                                Total</button>
+                            <p class=" mt-3  fs-2">Total :<span id="total-value"></span> </p>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -152,22 +160,12 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./index.js"></script>
-    <script src="./select.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/select.js"></script>
 </body>
 
 </html>

@@ -12,11 +12,12 @@ function display(player) {
         const tr = document.createElement("tr");
         tr.innerHTML =
             `
-            <th>${1 + i}</th>
-            <td>${name}</td>
+            <th>${1 + i} </th>
+            <th>${name}  </td>
         `;
         tableBody.appendChild(tr);
     }
+
 
 }
 
@@ -30,19 +31,7 @@ function selectedV(element) {
     playerArry.push(playerObj);
 
     display(playerArry);
+
+
+    element.disabled = true;
 }
-
-
-let nameOfSerial = playerArry.length;
-
-document.getElementById('calculate-btn').addEventListener('click', function () {
-
-    const perPlayerCostField = document.getElementById('per-player-coast');
-    const perPlayerCostString = perPlayerCostField.value;
-    const perPlayer = parseFloat(perPlayerCostString);
-
-    const playerExpensesField = document.getElementById('player-expenses');
-    const playerExpenses = perPlayer * nameOfSerial;
-    playerExpensesField.innerText = playerExpenses;
-})
-
