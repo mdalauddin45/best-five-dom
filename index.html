@@ -30,7 +30,7 @@
     <!-- header section end -->
 
     <!-- player section stat  -->
-    <div class=" text-center ">
+    <div class=" text-center mb-5 mt-5 ">
         <div class="row">
             <div class="col g-col-8">
                 <div class="container text-center">
@@ -43,7 +43,7 @@
                                     <h5 class="card-title">Lionel Messi
                                     </h5>
                                     <p class="card-text">10 Goal . 120 Assist</p>
-                                    <button onclick="selectedV(this)" class="btn btn-primary">SELECT</button>
+                                    <button onclick="selectedV(this)" class="btn btn-primary fs-5 w-50">SELECT</button>
 
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                                     <h5 class="card-title">Neymar Jr
                                     </h5>
                                     <p class="card-text">10 Goal . 120 Assist</p>
-                                    <button onclick="selectedV(this)" class="btn btn-primary">SELECT</button>
+                                    <button onclick="selectedV(this)" class="btn btn-primary fs-5 w-50">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     <h5 class="card-title">Kylian Mbappé
                                     </h5>
                                     <p class="card-text">10 Goal . 120 Assist</p>
-                                    <button onclick="selectedV(this)" class="btn btn-primary">SELECT</button>
+                                    <button onclick="selectedV(this)" class="btn btn-primary fs-5 w-50">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Vítor Machado</h5>
                                     <p class="card-text">10 Goal . 120 Assist</p>
-                                    <button onclick="selectedV(this)" class="btn btn-primary">SELECT</button>
+                                    <button onclick="selectedV(this)" class="btn btn-primary fs-5 w-50">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                                     <h5 class="card-title">Sergio Ramos
                                     </h5>
                                     <p class="card-text">10 Goal . 120 Assist</p>
-                                    <button onclick="selectedV(this)" class="btn btn-primary">SELECT</button>
+                                    <button onclick="selectedV(this)" class="btn btn-primary fs-5 w-50">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                                     <h5 class="card-title">Renato Sanches
                                     </h5>
                                     <p class="card-text">10 Goal . 120 Assist</p>
-                                    <button onclick="selectedV(this)" class="btn btn-primary">SELECT</button>
+                                    <button onclick="selectedV(this)" class="btn btn-primary fs-5 w-50">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                             <span>Per Player <input id="per-player-coast" type="number" name=""></span> <br>
                             <button id="calculate-btn" type="button"
                                 class="btn btn-primary mt-3 mb-2 fs-4 w-25  ">Calculate</button>
-                            <p class="me-4">Player Expenses :<span id="player-expenses"></span> </p>
+                            <p class="me-4">Player Expenses $<span id="player-expenses"></span> </p>
                             <span class="me-2"> Manager <input id="manager-cost" class="mb-2" type="number"
                                     name=""></span> <br>
                             <span>Coach <input id="coach-cost" class="mb-2 ms-4  mt-3 w-12" type="number"
@@ -145,7 +145,9 @@
 
                             <button id="calculate-total" type="button" class="btn btn-primary  mt-3 fs-4 ">Calculate
                                 Total</button>
-                            <p class=" mt-3  fs-2">Total :<span id="total-value"></span> </p>
+                            <p class=" mt-3  fs-2 ">Total <small class="text-warning">$<span
+                                        id="total-value"></span></small>
+                            </p>
                         </div>
                     </div>
                 </section>

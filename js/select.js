@@ -12,7 +12,7 @@ function display(player) {
         const tr = document.createElement("tr");
         tr.innerHTML =
             `
-            <th>${1 + i} </th>
+            <th>${1 + i}. </th>
             <th>${name}  </td>
         `;
         tableBody.appendChild(tr);
