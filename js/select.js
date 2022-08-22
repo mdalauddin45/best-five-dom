@@ -42,7 +42,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPlayer = parseFloat(perPlayerCostString);
 
     const playerExpensesField = document.getElementById('player-expenses');
-    const playerExpenses = perPlayer * nameOfSerial;
+    const playerExpenses = perPlayer * 5;
     playerExpensesField.innerText = playerExpenses;
 })
 
