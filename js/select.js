@@ -32,8 +32,6 @@ function selectedV(element) {
 
     display(playerArry);
 
-    // console.log(playerArry);
-
 
     element.disabled = true;
 }
