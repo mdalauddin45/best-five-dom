@@ -35,3 +35,20 @@ function selectedV(element) {
 
     element.disabled = true;
 }
+
+
+
+// function selectedV() {
+//     let a = document.getElementsByName('sbt');
+//     let limit = 0;
+//     let i;
+//     for (i = 0; i < a.length; i++) {
+//         if (a[i].tr == true) {
+//             limit = limit + 1;
+//         }
+//     }
+//     if (i > 5) {
+//         alert('hello');
+//         return false;
+//     }
+// }
