@@ -1,19 +1,30 @@
 
-
-
 document.getElementById('calculate-btn').addEventListener('click', function () {
 
     const perPlayerCostField = document.getElementById('per-player-coast');
     const perPlayerCostString = perPlayerCostField.value;
     const perPlayer = parseFloat(perPlayerCostString);
 
+    const playerListNo = playerArry.length;
+
     const playerExpensesField = document.getElementById('player-expenses');
-    const playerExpenses = perPlayer * 5;
+    const playerExpenses = perPlayer * playerListNo;
     playerExpensesField.innerText = playerExpenses;
 })
 
 
+
+
 document.getElementById('calculate-tatal').addEventListener('click', function () {
+    const perPlayerCostField = document.getElementById('per-player-coast');
+    const perPlayerCostString = perPlayerCostField.value;
+    const perPlayer = parseFloat(perPlayerCostString);
+
+    const playerListNo = playerArry.length;
+
+    const playerExpensesField = document.getElementById('player-expenses');
+    const playerExpenses = perPlayer * playerListNo;
+    playerExpensesField.innerText = playerExpenses;
 
 
     const managerCostField = document.getElementById('manager-cost');
@@ -25,6 +36,7 @@ document.getElementById('calculate-tatal').addEventListener('click', function ()
     const coach = parseFloat(coachCostString);
 
     const toatlFeild = document.getElementById('total-value');
-    const totalValue = manager + coach;
+    const totalValue = manager + coach + playerExpenses;
     toatlFeild.innerText = totalValue;
 })
+
