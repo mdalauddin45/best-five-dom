@@ -18,6 +18,7 @@ function display(player) {
         tableBody.appendChild(tr);
     }
 
+
 }
 
 
@@ -30,6 +31,8 @@ function selectedV(element) {
     playerArry.push(playerObj);
 
     display(playerArry);
+
+    element.disabled = true;
 }
 
 
