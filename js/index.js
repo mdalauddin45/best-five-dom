@@ -16,11 +16,11 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 
 document.getElementById('calculate-total').addEventListener('click', function () {
-    const perPlayerCostField = document.getElementById('per-player-coast');
+    const perPlayerCostField = document.getElementById('per-player-cost');
     const perPlayerCostString = perPlayerCostField.value;
     const perPlayer = parseFloat(perPlayerCostString);
 
-    const playerListNo = playerArry.length;
+    const playerListNo = playerArray.length;
 
     const playerExpensesField = document.getElementById('player-expenses');
     const playerExpenses = perPlayer * playerListNo;

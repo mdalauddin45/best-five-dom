@@ -1,9 +1,9 @@
-const playerArry = [];
+const playerArray = [];
 
 
 function display(player) {
-    if (playerArry.length > 5) {
-        if (playerArry.length = 5) {
+    if (playerArray.length > 5) {
+        if (playerArray.length = 5) {
             alert('You cannot add 5 more player');
             return element.disabled = false;
         }
@@ -15,7 +15,7 @@ function display(player) {
     tableBody.innerHTML = "";
 
     for (let i = 0; i < player.length; i++) {
-        const name = playerArry[i].playerName;
+        const name = playerArray[i].playerName;
         const tr = document.createElement("tr");
         tr.innerHTML =
             `
@@ -36,9 +36,9 @@ function selectedV(element) {
     const playerObj = {
         playerName: playerName
     }
-    playerArry.push(playerObj);
+    playerArray.push(playerObj);
 
-    display(playerArry);
+    display(playerArray);
 
 
     element.disabled = true;
